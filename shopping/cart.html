@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="cart.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">SmartShop</div>
+        <nav aria-label="Main Navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Wishlist</a></li>
+                <li><a href="#">Help</a></li>
+            </ul>
+        </nav>
+        <div class="auth-buttons">
+            <button class="join" aria-label="Sign In">Sign In</button>
+            <button class="start" aria-label="Start Shopping">Start Shopping</button>
+        </div>
+    </header>
+
+    <main class="container">
+        <h1>Your Cart</h1>
+
+        <!-- Store Sections -->
+        <section class="store-section" aria-labelledby="amazon-store">
+            <h2 id="amazon-store">Amazon</h2>
+            <div class="cart-item" aria-labelledby="amazon-product1">
+                <img src="placeholder.jpg" alt="Amazon Product Image" class="product-image">
+                <div class="item-details">
+                    <h3 class="item-title" id="amazon-product1">Amazon Product 1</h3>
+                    <div class="controls">
+                        <label for="amazon-qty">Quantity:</label>
+                        <select id="amazon-qty" class="quantity" aria-label="Select Quantity">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                        <p class="item-price">$29.99</p>
+                    </div>
+                    <div class="button-group">
+                        <button class="wishlist-btn">Move to Wishlist</button>
+                        <button class="later-btn">Save for Later</button>
+                        <button class="delete-btn" aria-label="Delete Item">Delete</button>
+                    </div>
+                </div>
+            </div>
+            <button class="checkout-button">Checkout Amazon</button>
+        </section>
+
+        <section class="store-section" aria-labelledby="homedepot-store">
+            <h2 id="homedepot-store">Home Depot</h2>
+            <div class="cart-item" aria-labelledby="homedepot-product1">
+                <img src="placeholder.jpg" alt="Home Depot Product Image" class="product-image">
+                <div class="item-details">
+                    <h3 class="item-title" id="homedepot-product1">Home Depot Product 1</h3>
+                    <div class="controls">
+                        <label for="homedepot-qty">Quantity:</label>
+                        <select id="homedepot-qty" class="quantity" aria-label="Select Quantity">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                        <p class="item-price">$19.99</p>
+                    </div>
+                    <div class="button-group">
+                        <button class="wishlist-btn">Move to Wishlist</button>
+                        <button class="later-btn">Save for Later</button>
+                        <button class="delete-btn" aria-label="Delete Item">Delete</button>
+                    </div>
+                </div>
+            </div>
+            <button class="checkout-button">Checkout Home Depot</button>
+        </section>
+
+        <!-- Summary Section -->
+        <div class="summary" role="complementary">
+            <div class="subtotal">
+                <p>Subtotal (<span id="total-items">2</span> items): <span id="subtotal">$49.98</span></p>
+            </div>
+            <button class="checkout-all-btn">Checkout All Stores</button>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 SmartShop. All rights reserved.</p>
+    </footer>
+</body>
+</html>
